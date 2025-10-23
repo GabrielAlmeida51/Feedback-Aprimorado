@@ -119,3 +119,8 @@ app/
 ## Licença
 
 Este projeto está sob a licença MIT.
+
+
+
+<img width="348" height="565" alt="image" src="https://github.com/user-attachments/assets/472b53be-128b-428d-a2ca-3724949295fc" />
+
