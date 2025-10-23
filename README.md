@@ -1,8 +1,39 @@
-# Welcome to your Expo app 👋
+# Galeria de Imagens com Gestos
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto implementa uma galeria de imagens interativa em React Native com funcionalidades avançadas de interação e feedback ao usuário.
 
-## Get started
+## Funcionalidades Implementadas
+
+### 1. Visualização em Grid
+- Exibição de imagens em uma grade responsiva
+- 2 colunas com dimensionamento automático
+- Espaçamento e bordas arredondadas para melhor visual
+
+### 2. Interações
+- **Toque Simples**: Abre a imagem em tela cheia
+- **Duplo Toque**: Exibe o menu de exclusão da imagem
+- Feedback visual ao tocar nas imagens
+- Animações suaves nas transições
+
+### 3. Exclusão de Imagens
+- Interface intuitiva para exclusão
+- Overlay de confirmação
+- Animações durante o processo
+- Feedback visual claro
+
+### 4. Estado Vazio
+- Mensagem amigável quando não há imagens
+- Interface limpa e informativa
+
+## Screenshots
+
+[Aqui você deve adicionar screenshots do seu app mostrando:]
+1. Tela principal com a grade de imagens
+2. Visualização em tela cheia
+3. Menu de exclusão ativo
+4. Estado vazio (quando não há imagens)
+
+## Como Começar
 
 1. Install dependencies
 
@@ -42,9 +73,49 @@ To learn more about developing your project with Expo, look at the following res
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+## Tecnologias Utilizadas
 
-Join our community of developers creating universal apps.
+- React Native
+- Expo Router para navegação
+- Componentes Themed para suporte a temas
+- Animações nativas para feedback visual
+- TypeScript para tipo seguro
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Estrutura do Projeto
+
+```
+app/
+  ├── gallery.tsx         # Componente principal da galeria
+  ├── image-view.tsx      # Visualização em tela cheia
+  └── (tabs)/
+      └── index.tsx       # Ponto de entrada da aplicação
+```
+
+## Desafios e Soluções
+
+### Interações Gestuais
+- Implementação de detecção de duplo toque para melhor experiência do usuário
+- Feedback visual imediato para todas as interações
+
+### Gerenciamento de Estado
+- Uso de `useState` para controle dinâmico da lista de imagens
+- Estado local para controle de interações
+
+### Design Responsivo
+- Cálculo dinâmico do tamanho das imagens baseado na largura da tela
+- Layout adaptativo para diferentes tamanhos de tela
+
+## Melhorias Futuras
+
+- [ ] Adicionar suporte para upload de novas imagens
+- [ ] Implementar zoom na visualização em tela cheia
+- [ ] Adicionar mais opções de interação
+- [ ] Suporte para arrastar e reorganizar imagens
+
+## Autor
+
+[Seu Nome]
+
+## Licença
+
+Este projeto está sob a licença MIT.
